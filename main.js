@@ -10,10 +10,9 @@ function randInt(min, max) {
 }
 
 var cities = [
-    [29.3900, 91.0700],
-    [12.6530, 7.9864],
-    [19.0421, 65.2559],
-    [0.2295, 78.5243]
+    [40.7127, -74.0059],
+    [30.9166, 116.3833],
+    [51.5072, 0.1275],
 ];
 
 domain.onJoin = function() {
@@ -23,7 +22,7 @@ domain.onJoin = function() {
     }, String));
 
     this.register("get-point", riffle.want(function() {
-        return [Math.random()*180-90, Math.random()*180-90];
+        return [Math.random()*360-180, Math.random()*360-180];
     }));
 
     this.register("get-city", riffle.want(function() {
