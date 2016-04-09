@@ -22,7 +22,7 @@ domain.onJoin = function() {
         return [Math.random()*180-90, Math.random()*180-90];
     }));
 
-    this.register("get-vity-elevation", riffle.want(function(i) {
+    this.register("get-city-elevation", riffle.want(function(i) {
         return city_elevations[i];
     }, Number));
 };
