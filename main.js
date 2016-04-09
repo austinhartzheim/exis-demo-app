@@ -16,11 +16,6 @@ var cities = [
 ];
 
 domain.onJoin = function() {
-    this.register("echo", riffle.want(function(msg) {
-        console.log("Echo: " + msg);
-        return msg + " - server says hi";
-    }, String));
-
     this.register("get-point", riffle.want(function() {
         return [Math.random()*180-90, Math.random()*180-90];
     }));
