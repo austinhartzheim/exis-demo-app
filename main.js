@@ -12,7 +12,7 @@ domain.onJoin = function() {
     }, String));
 
     this.register("get-point", riffle.want(function() {
-        return [2, 3];
+        return [Math.random()*180-90, Math.random()*180-90];
     }));  
 };
 
