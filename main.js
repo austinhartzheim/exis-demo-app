@@ -10,9 +10,9 @@ function randInt(min, max) {
 }
 
 var cities = [
-    [-74.0059, 40.7127],
-    [116.3833, 39.9166],
-    [0.1275, 51.5072]
+    [-73.9352, 40.7357],  // New York
+    [116.3833, 39.9166],  // Bejing
+    [-0.0731, 51.5069],  // London
 ];
 
 domain.onJoin = function() {
