@@ -10,6 +10,10 @@ domain.onJoin = function() {
         console.log("Echo: " + msg);
         return msg + " - server says hi";
     }, String));
-}
+
+    this.register("get-point", riffle.want(function() {
+        return [2, 3];
+    }));  
+};
 
 domain.join()
